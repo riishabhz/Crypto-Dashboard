@@ -1,0 +1,71 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "2de2b5721ce960ae2aeb",
+  "position": {
+    "x": 252.0478526052884,
+    "y": 100.81914104211536,
+    "z": 1000,
+    "height": 142.33290500063345,
+    "width": 274.2873690116374,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Coin"
+                    }
+                  },
+                  "Property": "Stablecoin Ratio %"
+                }
+              },
+              "queryRef": "Coin.Stablecoin Ratio %",
+              "nativeQueryRef": "Stablecoin Ratio %"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Coin"
+                  }
+                },
+                "Property": "Stablecoin Ratio %"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

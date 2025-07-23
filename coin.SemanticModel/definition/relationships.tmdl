@@ -1,0 +1,5 @@
+relationship 20bcffe6-525a-487b-81c8-c226a1100e25
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Coin.last_updated
+	toColumn: LocalDateTable_21695da2-08b9-4837-9876-e03c50a822f8.Date
+

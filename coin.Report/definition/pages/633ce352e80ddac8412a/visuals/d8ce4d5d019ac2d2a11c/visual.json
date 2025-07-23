@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "d8ce4d5d019ac2d2a11c",
+  "position": {
+    "x": 502.50766765850307,
+    "y": 103.1265735866331,
+    "z": 9000,
+    "height": 142.50217441062028,
+    "width": 243.75371938658731,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Coin"
+                    }
+                  },
+                  "Property": "Top 10 Alt Dominance Daily"
+                }
+              },
+              "queryRef": "Coin.Top 5 Alt Dominance Daily",
+              "nativeQueryRef": "Top 10 Alt Dominance %",
+              "displayName": "Top 10 Alt Dominance %"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Coin"
+                  }
+                },
+                "Property": "Top 10 Alt Dominance Daily"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

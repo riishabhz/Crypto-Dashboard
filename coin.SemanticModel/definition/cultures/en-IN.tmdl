@@ -1,0 +1,5226 @@
+cultureInfo en-IN
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "coin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "coin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "currency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "money": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "coinage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "denomination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "penny": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "change": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "coin.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "coin.name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "coin.symbol": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "symbol"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "symbol": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "representation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "icon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pictogram": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "sign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "character": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "emblem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "indication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "image": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "coin.price": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "price"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "price": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fee": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "bill": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "expense": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "outlay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "penalty": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "punishment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "coin.LogoData_symbol": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "LogoData.symbol"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "LogoData.symbol": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "logodata. representation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "logodata. icon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "logodata. pictogram": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "logodata. sign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "logodata. character": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "logodata. figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "logodata. mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "logodata. emblem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "logodata. indication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "logodata. logo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        }
+			      ]
+			    },
+			    "coin.logo_data_value_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "LogoData.Value.id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "logo data value id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "LogoData.Value.id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "data value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "logo data value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "value id": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "data value id": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "logo data value identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "logo data value identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "logo data value identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "data value identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "data value identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "data value identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "value identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "value identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "value identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "logo data value credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "coin.logo_data_value_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "LogoData.Value.name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "logo data value name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "LogoData.Value.name": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "data value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "logo data value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "value name": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "data value name": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "logo data value nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "logo data value title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "logo data value label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "logo data value tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "data value nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "data value title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "data value label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "data value tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "value nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "value title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Coin Filter": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Name": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "coin.LogoData_value_symbol": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "LogoData.Value.symbol"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "LogoData.value.symbol": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "logodata.value. representation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "logodata.value. icon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "logodata.value. pictogram": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "logodata.value. sign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "logodata.value. character": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "logodata.value. figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "logodata.value. mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "logodata.value. emblem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "logodata.value. indication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "logodata.value. logo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "Symbol": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "coin.LogoData_value_category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "LogoData.Value.category"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "LogoData.value.category": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "logodata.value. classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "logodata.value. class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "logodata.value. group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "logodata.value. type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "logodata.value. grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "logodata.value. kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        }
+			      ]
+			    },
+			    "coin.LogoData_value_logo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "LogoData.Value.logo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "LogoData.value.logo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "logodata.value. emblem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "logodata.value. symbol": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "logodata.value. sign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "logodata.value. badge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "logodata.value. insigne": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "logodata.value. design": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "Logo": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "coin.volume_2_4h": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "volume_24h"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "volume 2 4h": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "volume_24h": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "coin.volume_change_2_4h": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "volume_change_24h"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "volume change 2 4h": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "volume_change_24h": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "coin.percent_change_1h": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "percent_change_1h"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "percent change 1h": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percent_change_1h": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "coin.percent_change_2_4h": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "percent_change_24h"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "percent change 2 4h": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percent_change_24h": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "coin.percent_change_7d": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "percent_change_7d"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "percent change 7d": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percent_change_7d": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "coin.percent_change_3_0d": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "percent_change_30d"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "percent change 3 0d": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percent_change_30d": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "coin.percent_change_6_0d": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "percent_change_60d"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "percent change 6 0d": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percent_change_60d": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "coin.percent_change_9_0d": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "percent_change_90d"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "percent change 9 0d": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percent_change_90d": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "coin.market_cap": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "market_cap"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "market cap": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "market_cap": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "cap": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "market lid": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "market cover": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "market top": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "market stopper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "market plug": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "lid": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cover": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stopper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "plug": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "market restraint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "coin.market_cap_dominance": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "market_cap_dominance"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "market cap dominance": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "market_cap_dominance": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dominance": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cap dominance": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "market cap supremacy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "market cap ascendency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "market cap ascendancy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "market cap domination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "market cap governance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "market cap authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "cap supremacy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cap ascendency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cap ascendancy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cap domination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "coin.last_updated": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "last_updated"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "last updated": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "last_updated": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "end updated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "final updated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "closing updated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "concluding updated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "finishing updated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "former updated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "latest updated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "latter updated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "past updated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "remaining updated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "coin.last_updated.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "VariationSource": "last_updated",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "last updated date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "coin.last_updated.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "VariationSource": "last_updated",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "last updated year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "last updated yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "end updated year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "final updated year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "closing updated year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "concluding updated year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "finishing updated year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "former updated year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "latest updated year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "latter updated year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "coin.last_updated.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "VariationSource": "last_updated",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "last updated quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "last updated qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "end updated quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "final updated quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "closing updated quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "concluding updated quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "finishing updated quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "former updated quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "latest updated quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "latter updated quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "coin.last_updated.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "VariationSource": "last_updated",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "last updated month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "last updated mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "end updated month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "final updated month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "closing updated month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "concluding updated month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "finishing updated month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "former updated month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "latest updated month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "latter updated month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "coin.last_updated.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "VariationSource": "last_updated",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "last updated day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "end updated day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "final updated day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "closing updated day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "concluding updated day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "finishing updated day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "former updated day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "latest updated day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "latter updated day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "past updated day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "remaining updated day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "coin.crypto_test_card": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "CryptoTestCard"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "crypto test card": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CryptoTestCard": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "test card": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "crypto test postcard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "crypto test valentine": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "test postcard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "test valentine": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "crypto test pass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "test pass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "coin.crypto_cards": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "CryptoCards"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "crypto cards": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CryptoCards": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "cards": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "crypto postcard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "crypto valentine": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "postcard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "valentine": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "crypto pass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "pass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "coin.market_summary": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "Market Summary"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "market summary": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "summary": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "market synopsis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "market explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "market extraction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "market summarisation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "synopsis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "extraction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "summarisation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "market review": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "market abstract": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "coin.price_change_24h_styled": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "Price Change 24h (Styled)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "price change 24h (styled)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "price change 24h": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "coin.price_change_1h_styled": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "Price Change 1h (Styled)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "price change 1h (styled)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "price change 1h": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "coin.price_change_7d_styled": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "Price Change 7d (Styled)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "price change 7d (styled)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "price change 7d": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "coin.BTC_dominance_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "BTC Dominance %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "BTC dominance %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "btc dominance percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "btc dominance pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "coin.stablecoin_ratio_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "Stablecoin Ratio %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stablecoin ratio %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "stablecoin ratio percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "stablecoin ratio pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "coin.altcoin_season_index": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "Altcoin Season Index"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "altcoin season index": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "altcoin season directory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "altcoin season catalogue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "altcoin season catalog": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "altcoin season guide": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "altcoin season file": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "altcoin season key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "altcoin season table": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "altcoin season manifestation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "altcoin season pointer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "altcoin season indication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        }
+			      ]
+			    },
+			    "coin.alt_season_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "Alt Season Status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "alt season status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "status": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "season status": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "alt season category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "alt season importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "alt season prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "alt season prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "season category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "season importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "season prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "season prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "alt season condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "alt season class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "coin.needle_color": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "Needle Color"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "needle color": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "color": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "needle hue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "hue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "needle tint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "needle shade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "needle dye": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "needle paint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "needle pigment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "tint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "shade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "dye": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "coin.crypto_market_overview": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "Crypto Market Overview"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "crypto market overview": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "overview": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "market overview": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "crypto market impression": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "crypto market indication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "crypto market synopsis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "crypto market gestalt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "market impression": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "market indication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "market synopsis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "market gestalt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "crypto market summary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "crypto market outline": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "coin.ETH_dominance_daily": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "ETH Dominance Daily"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ETH dominance daily": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "daily": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dominance daily": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "day-to-day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "regular": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "diurnal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "ETH Dominance %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "coin.stablecoin_dominance_daily": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "Stablecoin Dominance Daily"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stablecoin dominance daily": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "coin.top_10_alt_dominance_daily": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "Top 10 Alt Dominance Daily"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "top 10 alt dominance daily": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "daily": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dominance daily": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "alt dominance daily": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "10 alt dominance daily": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "best 10 alt dominance daily": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "first 10 alt dominance daily": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "leading 10 alt dominance daily": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "maximum 10 alt dominance daily": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "peak 10 alt dominance daily": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "upper 10 alt dominance daily": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "day-to-day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "regular": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "diurnal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "Top 10 Alt Dominance %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "coin.market_phase": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "Market Phase"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "market phase": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "phase": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "market stage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "market point": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "market chapter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "market segment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "market part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "market period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "market level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "market rung": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "stage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "point": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "coin.market_trends_summary": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Coin",
+			          "ConceptualProperty": "Market Trends Summary"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "market trends summary": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "summary": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "trends summary": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "market trend synopsis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "market trend explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "market trend extraction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "market trend summarisation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "trend synopsis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "trend explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "trend extraction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "trend summarisation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "market trend review": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "market trend abstract": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "coin_has_market_trends_summary": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.market_trends_summary": {
+			          "Target": {
+			            "Entity": "coin.market_trends_summary"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.market_trends_summary"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_market_trends_summary"
+			        }
+			      ]
+			    },
+			    "coin_has_market_phase": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.market_phase": {
+			          "Target": {
+			            "Entity": "coin.market_phase"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.market_phase"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_market_phase"
+			        }
+			      ]
+			    },
+			    "coin_has_top_10_alt_dominance_daily": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.top_10_alt_dominance_daily": {
+			          "Target": {
+			            "Entity": "coin.top_10_alt_dominance_daily"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.top_10_alt_dominance_daily"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_top_10_alt_dominance_daily"
+			        }
+			      ]
+			    },
+			    "coin_has_stablecoin_dominance_daily": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.stablecoin_dominance_daily": {
+			          "Target": {
+			            "Entity": "coin.stablecoin_dominance_daily"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.stablecoin_dominance_daily"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_stablecoin_dominance_daily"
+			        }
+			      ]
+			    },
+			    "coin_has_ETH_dominance_daily": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.ETH_dominance_daily": {
+			          "Target": {
+			            "Entity": "coin.ETH_dominance_daily"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.ETH_dominance_daily"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_ETH_dominance_daily"
+			        }
+			      ]
+			    },
+			    "coin_has_crypto_market_overview": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.crypto_market_overview": {
+			          "Target": {
+			            "Entity": "coin.crypto_market_overview"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.crypto_market_overview"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_crypto_market_overview"
+			        }
+			      ]
+			    },
+			    "coin_has_needle_color": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.needle_color": {
+			          "Target": {
+			            "Entity": "coin.needle_color"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.needle_color"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_needle_color"
+			        }
+			      ]
+			    },
+			    "coin_has_alt_season_status": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.alt_season_status": {
+			          "Target": {
+			            "Entity": "coin.alt_season_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.alt_season_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_alt_season_status"
+			        }
+			      ]
+			    },
+			    "coin_has_altcoin_season_index": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.altcoin_season_index": {
+			          "Target": {
+			            "Entity": "coin.altcoin_season_index"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.altcoin_season_index"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_altcoin_season_index"
+			        }
+			      ]
+			    },
+			    "coin_has_stablecoin_ratio_": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.stablecoin_ratio_": {
+			          "Target": {
+			            "Entity": "coin.stablecoin_ratio_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.stablecoin_ratio_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_stablecoin_ratio_"
+			        }
+			      ]
+			    },
+			    "coin_has_BTC_dominance_": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.BTC_dominance_": {
+			          "Target": {
+			            "Entity": "coin.BTC_dominance_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.BTC_dominance_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_BTC_dominance_"
+			        }
+			      ]
+			    },
+			    "coin_has_price_change_7d_styled": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.price_change_7d_styled": {
+			          "Target": {
+			            "Entity": "coin.price_change_7d_styled"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.price_change_7d_styled"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_price_change_7d_styled"
+			        }
+			      ]
+			    },
+			    "coin_has_price_change_1h_styled": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.price_change_1h_styled": {
+			          "Target": {
+			            "Entity": "coin.price_change_1h_styled"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.price_change_1h_styled"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_price_change_1h_styled"
+			        }
+			      ]
+			    },
+			    "coin_has_price_change_24h_styled": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.price_change_24h_styled": {
+			          "Target": {
+			            "Entity": "coin.price_change_24h_styled"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.price_change_24h_styled"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_price_change_24h_styled"
+			        }
+			      ]
+			    },
+			    "coin_has_market_summary": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.market_summary": {
+			          "Target": {
+			            "Entity": "coin.market_summary"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.market_summary"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_market_summary"
+			        }
+			      ]
+			    },
+			    "coin_has_crypto_cards": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.crypto_cards": {
+			          "Target": {
+			            "Entity": "coin.crypto_cards"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.crypto_cards"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_crypto_cards"
+			        }
+			      ]
+			    },
+			    "coin_has_crypto_test_card": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.crypto_test_card": {
+			          "Target": {
+			            "Entity": "coin.crypto_test_card"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.crypto_test_card"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_crypto_test_card"
+			        }
+			      ]
+			    },
+			    "coin_has_last_updated": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.last_updated": {
+			          "Target": {
+			            "Entity": "coin.last_updated"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.last_updated"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_last_updated"
+			        }
+			      ]
+			    },
+			    "coin_has_market_cap_dominance": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.market_cap_dominance": {
+			          "Target": {
+			            "Entity": "coin.market_cap_dominance"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.market_cap_dominance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_market_cap_dominances"
+			        }
+			      ]
+			    },
+			    "coin_has_market_cap": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.market_cap": {
+			          "Target": {
+			            "Entity": "coin.market_cap"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.market_cap"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_market_caps"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "coin.market_cap"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "market_cap_indicates_how_expensive_coins_are"
+			        }
+			      ]
+			    },
+			    "coin_has_percent_change_9_0d": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.percent_change_9_0d": {
+			          "Target": {
+			            "Entity": "coin.percent_change_9_0d"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.percent_change_9_0d"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_percent_change_9_0ds"
+			        }
+			      ]
+			    },
+			    "coin_has_percent_change_6_0d": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.percent_change_6_0d": {
+			          "Target": {
+			            "Entity": "coin.percent_change_6_0d"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.percent_change_6_0d"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_percent_change_6_0ds"
+			        }
+			      ]
+			    },
+			    "coin_has_percent_change_3_0d": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.percent_change_3_0d": {
+			          "Target": {
+			            "Entity": "coin.percent_change_3_0d"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.percent_change_3_0d"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_percent_change_3_0ds"
+			        }
+			      ]
+			    },
+			    "coin_has_percent_change_7d": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.percent_change_7d": {
+			          "Target": {
+			            "Entity": "coin.percent_change_7d"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.percent_change_7d"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_percent_change_7ds"
+			        }
+			      ]
+			    },
+			    "coin_has_percent_change_2_4h": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.percent_change_2_4h": {
+			          "Target": {
+			            "Entity": "coin.percent_change_2_4h"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.percent_change_2_4h"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_percent_change_2_4hs"
+			        }
+			      ]
+			    },
+			    "coin_has_percent_change_1h": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.percent_change_1h": {
+			          "Target": {
+			            "Entity": "coin.percent_change_1h"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.percent_change_1h"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_percent_change_1hs"
+			        }
+			      ]
+			    },
+			    "coin_has_volume_change_2_4h": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.volume_change_2_4h": {
+			          "Target": {
+			            "Entity": "coin.volume_change_2_4h"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.volume_change_2_4h"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_volume_change_2_4hs"
+			        }
+			      ]
+			    },
+			    "coin_has_volume_2_4h": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.volume_2_4h": {
+			          "Target": {
+			            "Entity": "coin.volume_2_4h"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.volume_2_4h"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_volume_2_4hs"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "coin.volume_2_4h"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "volume_2_4h_indicates_how_expensive_coins_are"
+			        }
+			      ]
+			    },
+			    "coin_has_LogoData_value_logo": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.LogoData_value_logo": {
+			          "Target": {
+			            "Entity": "coin.LogoData_value_logo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.LogoData_value_logo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_LogoData_value_logos"
+			        }
+			      ]
+			    },
+			    "coin_has_LogoData_value_category": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.LogoData_value_category": {
+			          "Target": {
+			            "Entity": "coin.LogoData_value_category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.LogoData_value_category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_LogoData_value_categories"
+			        }
+			      ]
+			    },
+			    "coin_has_LogoData_value_symbol": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.LogoData_value_symbol": {
+			          "Target": {
+			            "Entity": "coin.LogoData_value_symbol"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.LogoData_value_symbol"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_LogoData_value_symbols"
+			        }
+			      ]
+			    },
+			    "coin_has_logo_data_value_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.logo_data_value_name": {
+			          "Target": {
+			            "Entity": "coin.logo_data_value_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.logo_data_value_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_logo_data_value_names"
+			        }
+			      ]
+			    },
+			    "coin_has_logo_data_value_id": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.logo_data_value_id": {
+			          "Target": {
+			            "Entity": "coin.logo_data_value_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.logo_data_value_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_logo_data_value_ids"
+			        }
+			      ]
+			    },
+			    "coin_has_LogoData_symbol": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.LogoData_symbol": {
+			          "Target": {
+			            "Entity": "coin.LogoData_symbol"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.LogoData_symbol"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_LogoData_symbols"
+			        }
+			      ]
+			    },
+			    "coin_has_price": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.price": {
+			          "Target": {
+			            "Entity": "coin.price"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.price"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_prices"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "coin.price"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "price_indicates_how_expensive_coins_are"
+			        }
+			      ]
+			    },
+			    "coin_has_symbol": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.symbol": {
+			          "Target": {
+			            "Entity": "coin.symbol"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.symbol"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_symbols"
+			        }
+			      ]
+			    },
+			    "coin_has_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.name": {
+			          "Target": {
+			            "Entity": "coin.name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_names"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Name": {
+			              "Role": "coin.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "names_are_names_IDs_of_coins"
+			        }
+			      ]
+			    },
+			    "coin_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.id": {
+			          "Target": {
+			            "Entity": "coin.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Object": {
+			              "Role": "coin.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "coins_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "coin"
+			            },
+			            "Name": {
+			              "Role": "coin.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_coins"
+			        }
+			      ]
+			    },
+			    "coin_is_updated_on_last_updated": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin": {
+			          "Target": {
+			            "Entity": "coin"
+			          }
+			        },
+			        "coin.last_updated": {
+			          "Target": {
+			            "Entity": "coin.last_updated"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "coin.last_updated"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "update": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "coin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "coins_are_updated_on_last_updated"
+			        }
+			      ]
+			    },
+			    "coin_last_updated_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin.last_updated": {
+			          "Target": {
+			            "Entity": "coin.last_updated"
+			          }
+			        },
+			        "coin.last_updated.date_hierarchy": {
+			          "Target": {
+			            "Entity": "coin.last_updated.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin.last_updated"
+			            },
+			            "Object": {
+			              "Role": "coin.last_updated.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "last_updated_have_last_updated_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "coin_last_updated_date_hierarchy_has_coin_last_updated_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin.last_updated.date_hierarchy": {
+			          "Target": {
+			            "Entity": "coin.last_updated.date_hierarchy"
+			          }
+			        },
+			        "coin.last_updated.year": {
+			          "Target": {
+			            "Entity": "coin.last_updated.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin.last_updated.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "coin.last_updated.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "last_updated_date_hierarchies_have_last_updated_years"
+			        }
+			      ]
+			    },
+			    "coin_last_updated_date_hierarchy_has_coin_last_updated_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin.last_updated.date_hierarchy": {
+			          "Target": {
+			            "Entity": "coin.last_updated.date_hierarchy"
+			          }
+			        },
+			        "coin.last_updated.quarter": {
+			          "Target": {
+			            "Entity": "coin.last_updated.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin.last_updated.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "coin.last_updated.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "last_updated_date_hierarchies_have_last_updated_quarters"
+			        }
+			      ]
+			    },
+			    "coin_last_updated_date_hierarchy_has_coin_last_updated_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin.last_updated.date_hierarchy": {
+			          "Target": {
+			            "Entity": "coin.last_updated.date_hierarchy"
+			          }
+			        },
+			        "coin.last_updated.month": {
+			          "Target": {
+			            "Entity": "coin.last_updated.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin.last_updated.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "coin.last_updated.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "last_updated_date_hierarchies_have_last_updated_months"
+			        }
+			      ]
+			    },
+			    "coin_last_updated_date_hierarchy_has_coin_last_updated_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Coin"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "coin.last_updated.date_hierarchy": {
+			          "Target": {
+			            "Entity": "coin.last_updated.date_hierarchy"
+			          }
+			        },
+			        "coin.last_updated.day": {
+			          "Target": {
+			            "Entity": "coin.last_updated.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "coin.last_updated.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "coin.last_updated.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "last_updated_date_hierarchies_have_last_updated_days"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

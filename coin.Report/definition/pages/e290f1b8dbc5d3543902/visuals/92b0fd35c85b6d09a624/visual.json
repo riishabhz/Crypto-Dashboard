@@ -1,0 +1,401 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "92b0fd35c85b6d09a624",
+  "position": {
+    "x": 0,
+    "y": 232.77360505311927,
+    "z": 0,
+    "height": 487.78672651258756,
+    "width": 1280.996145005701
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Coin"
+                    }
+                  },
+                  "Property": "LogoData.Value.logo"
+                }
+              },
+              "queryRef": "Coin.LogoData.Value.logo",
+              "nativeQueryRef": "Logo",
+              "displayName": "Logo"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Coin"
+                    }
+                  },
+                  "Property": "LogoData.Value.symbol"
+                }
+              },
+              "queryRef": "Coin.LogoData.Value.symbol",
+              "nativeQueryRef": "Symbol",
+              "displayName": "Symbol"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Coin"
+                        }
+                      },
+                      "Property": "price"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Coin.price)",
+              "nativeQueryRef": "Price",
+              "displayName": "Price"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Coin"
+                    }
+                  },
+                  "Property": "Price Change 1h (Styled)"
+                }
+              },
+              "queryRef": "Coin.Price Change 1h (Styled)",
+              "nativeQueryRef": "Price Change 1h",
+              "displayName": "Price Change 1h"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Coin"
+                    }
+                  },
+                  "Property": "Price Change 24h (Styled)"
+                }
+              },
+              "queryRef": "Coin.Price Change 24h (Styled)",
+              "nativeQueryRef": "Price Change 24h",
+              "displayName": "Price Change 24h"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Coin"
+                    }
+                  },
+                  "Property": "Price Change 7d (Styled)"
+                }
+              },
+              "queryRef": "Coin.Price Change 7d (Styled)",
+              "nativeQueryRef": "Price Change 7d",
+              "displayName": "Price Change 7d"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Coin"
+                        }
+                      },
+                      "Property": "volume_24h"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Coin.volume_24h)",
+              "nativeQueryRef": "Volume 24h",
+              "displayName": "Volume 24h"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Coin"
+                        }
+                      },
+                      "Property": "market_cap"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Coin.market_cap)",
+              "nativeQueryRef": "Market Cap",
+              "displayName": "Market Cap"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Coin"
+                        }
+                      },
+                      "Property": "market_cap_dominance"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Coin.market_cap_dominance)",
+              "nativeQueryRef": "Market cap dominance",
+              "displayName": "Market cap dominance"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Coin"
+                      }
+                    },
+                    "Property": "market_cap_dominance"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "116.25085831998169D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Coin.LogoData.Value.symbol"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "119.75051499198901D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Coin.LogoData.Value.logo"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "145.87548638132296D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(Coin.price)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "172.1256580453193D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(Coin.volume_24h)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "121.82140818032761D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Coin.Price Change 7d (Styled)"
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(Coin.price)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Coin.Price Change 1h (Styled)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Coin.Price Change 24h (Styled)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(Coin.volume_24h)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(Coin.market_cap)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(Coin.market_cap_dominance)"
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Minimal'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

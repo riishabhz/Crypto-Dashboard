@@ -1,0 +1,775 @@
+table Coin
+	lineageTag: e8865d7b-bfbe-4149-99c9-1d40efc12624
+
+	measure CryptoTestCard = ```
+			
+			"
+			<div style='padding:10px; border:1px solid #ccc;'>
+			  <img src='https://s2.coinmarketcap.com/static/img/coins/64x64/1.png' width='32'/>
+			  <div><b>Bitcoin (BTC)</b></div>
+			  <div>$117,000</div>
+			</div>
+			"
+			
+			```
+		lineageTag: 42bca5fd-b637-4a99-aa97-285246379a8f
+
+	measure CryptoCards = ```
+			
+			VAR Cards =
+			    CONCATENATEX (
+			        'Coin',
+			        VAR _Name = 'Coin'[LogoData.Value.name]
+			        VAR Symbol = 'Coin'[symbol]
+			        VAR Logo = 'Coin'[LogoData.Value.logo]
+			        VAR Price = 'Coin'[price]
+			        VAR Change24h = 'Coin'[percent_change_24h]
+			        VAR MarketCap = 'Coin'[market_cap]
+			
+			        VAR ChangeColor =
+			            IF(Change24h > 0, "green", IF(Change24h < 0, "red", "gray"))
+			
+			        RETURN
+			        "
+			        <div class='card'>
+			          <div class='card-header'>
+			            <img class='logo' src='" & Logo & "' />
+			            <div class='coin-title'>" & _Name & " (" & Symbol & ")</div>
+			          </div>
+			          <div class='coin-price'>$" & FORMAT(Price, "#,##0.0000") & "</div>
+			          <div class='coin-change " & ChangeColor & "'>" & FORMAT(Change24h, "+0.00;-0.00") & "% (24h)</div>
+			          <div class='coin-marketcap'>MCap: $" & FORMAT(MarketCap, "#,##0,,.00B") & "</div>
+			        </div>
+			        ",
+			        UNICHAR(10)  // optional line break between cards
+			    )
+			
+			RETURN
+			"
+			<!DOCTYPE html>
+			<html>
+			<head>
+			  <meta charset='UTF-8'>
+			  <style>
+			    body {
+			      background: #f4f4f4;
+			      font-family: Arial, sans-serif;
+			      margin: 0;
+			      padding: 24px;
+			    }
+			    .container {
+			      display: flex;
+			      flex-wrap: wrap;
+			      gap: 16px;
+			    }
+			    .card {
+			      background: white;
+			      border-radius: 10px;
+			      padding: 14px;
+			      width: 220px;
+			      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+			      display: flex;
+			      flex-direction: column;
+			      justify-content: space-between;
+			      min-height: 160px;
+			    }
+			    .card-header {
+			      display: flex;
+			      align-items: center;
+			      gap: 12px;
+			      margin-bottom: 8px;
+			    }
+			    .logo {
+			      width: 32px;
+			      height: 32px;
+			    }
+			    .coin-title {
+			      font-size: 15px;
+			      font-weight: bold;
+			      color: #333;
+			    }
+			    .coin-price {
+			      font-size: 16px;
+			      font-weight: bold;
+			      color: #000;
+			      margin-bottom: 4px;
+			    }
+			    .coin-change {
+			      font-size: 14px;
+			      font-weight: 500;
+			      margin-bottom: 6px;
+			    }
+			    .coin-change.green {
+			      color: #2ecc71;
+			    }
+			    .coin-change.red {
+			      color: #e74c3c;
+			    }
+			    .coin-change.gray {
+			      color: #888;
+			    }
+			    .coin-marketcap {
+			      font-size: 13px;
+			      color: #666;
+			    }
+			  </style>
+			</head>
+			<body>
+			  <div class='container'>
+			    " & Cards & "
+			  </div>
+			</body>
+			</html>
+			"
+			
+			```
+		lineageTag: fdfeae01-7eb5-403c-a4a0-46d3cb618511
+
+	measure 'Market Summary' = ```
+			
+			VAR TotalCap = SUM(Coin[market_cap]) / 1000000000000  // Convert to trillions
+			VAR TotalVolume = SUM(Coin[volume_24h]) / 1000000000  // Convert to billions
+			RETURN
+			"The global cryptocurrency market cap today is $" & 
+			FORMAT(TotalCap, "0.00") & " Trillion, " &
+			"total volume in the last 24 hours is $" & 
+			FORMAT(TotalVolume, "0.00") & " Billion."
+			```
+		lineageTag: a0e8bf6c-1d46-4c5b-b91b-a1bc6d536b7b
+
+	measure 'Price Change 24h (Styled)' = ```
+			
+			VAR Change = SELECTEDVALUE(Coin[percent_change_24h])
+			RETURN
+			    IF(Change > 0, "🟢 +" & FORMAT(Change, "0.00") & "%",
+			       IF(Change < 0, "🔴 " & FORMAT(Change, "0.00") & "%", 
+			       "⚪ " & FORMAT(Change, "0.00") & "%"))
+			```
+		lineageTag: bc91148d-ee8f-42b7-ba85-22b9aecdb6f3
+
+	measure 'Price Change 1h (Styled)' = ```
+			
+			VAR Change = SELECTEDVALUE(Coin[percent_change_1h])
+			RETURN
+			    IF(Change > 0, "🟢 +" & FORMAT(Change, "0.00") & "%",
+			       IF(Change < 0, "🔴 " & FORMAT(Change, "0.00") & "%", 
+			       "⚪ " & FORMAT(Change, "0.00") & "%"))
+			```
+		lineageTag: 1ebd7bc3-b0de-4829-a8b6-b03ed2fc0feb
+
+	measure 'Price Change 7d (Styled)' = ```
+			
+			VAR Change = SELECTEDVALUE(Coin[percent_change_7d])
+			RETURN
+			    IF(Change > 0, "🟢 +" & FORMAT(Change, "0.00") & "%",
+			       IF(Change < 0, "🔴 " & FORMAT(Change, "0.00") & "%", 
+			       "⚪ " & FORMAT(Change, "0.00") & "%"))
+			```
+		lineageTag: 2c71aea6-11cb-426d-a5b6-2731bffe215f
+
+	measure 'BTC Dominance %' = ```
+			
+			VAR BTCMarketCap = 
+			    CALCULATE(
+			        SUM(Coin[market_cap]),
+			        Coin[symbol] = "BTC",
+			        ALLSELECTED(Coin)  // Critical: ignores visual/page filters
+			    )
+			VAR TotalMarketCap = 
+			    CALCULATE(
+			        SUM(Coin[market_cap]),
+			        ALLSELECTED(Coin)  // Ensures total includes all coins
+			    )
+			RETURN
+			    DIVIDE(BTCMarketCap, TotalMarketCap, 0)
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 61d69aca-6bb4-42cd-bb9d-a809e39d17b5
+
+	measure 'Stablecoin Ratio %' = ```
+			
+			VAR StablecoinCap = 
+			    CALCULATE(
+			        SUM(Coin[market_cap]),
+			        Coin[LogoData.symbol] IN {"USDT", "USDC", "DAI", "FDUSD", "PYUSD", "USDe", "USD1", "TUSD"},
+			        ALLSELECTED(Coin)
+			    )
+			VAR TotalMarketCap = 
+			    CALCULATE(
+			        SUM(Coin[market_cap]),
+			        ALLSELECTED(Coin)
+			    )
+			RETURN
+			    DIVIDE(StablecoinCap, TotalMarketCap, 0)
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: ae956222-4ddf-48aa-9972-0922522fdd0f
+
+	measure 'Altcoin Season Index' = ```
+			
+			VAR Top50Altcoins = 
+			    TOPN(
+			        50,
+			        FILTER(Coin, 
+			            Coin[LogoData.symbol] <> "BTC" &&
+			            NOT Coin[LogoData.symbol] IN {"USDT", "USDC", "DAI", "FDUSD", "PYUSD", "USDe", "USD1", "TUSD"}
+			        ),
+			        Coin[market_cap], DESC
+			    )
+			VAR AltcoinROI = 
+			    AVERAGEX(
+			        Top50Altcoins,
+			        DIVIDE(Coin[percent_change_90d], 100)
+			    )
+			VAR BTCROI = 
+			    DIVIDE(
+			        CALCULATE(
+			            AVERAGE(Coin[percent_change_90d]),
+			            Coin[LogoData.symbol] = "BTC"
+			        ),
+			        100
+			    )
+			RETURN
+			    IF(
+			        BTCROI = 0, 1,
+			        DIVIDE(AltcoinROI, BTCROI)
+			    )
+			```
+		lineageTag: 095b3e75-4c5e-45e7-9801-28b8ddeff162
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Alt Season Status' =
+			
+			VAR Index = [Altcoin Season Index]
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        Index >= 2, "🚨 BUBBLE TERRITORY",
+			        Index >= 1.5, "🟢 STRONG Alt Season",
+			        Index >= 1.2, "🟡 Mild Alt Season",
+			        "🔴 Bitcoin Dominance"
+			    )
+		lineageTag: a0d90fd2-38b3-426f-bda3-26351ada1e84
+
+	measure 'Needle Color' =
+			
+			SWITCH(
+			    TRUE(),
+			    [Altcoin Season Index] >= 2, "#FF00FF",
+			    [Altcoin Season Index] >= 1.2, "#00FF00",
+			    "#FF0000"
+			)
+		lineageTag: 0fddbaba-745a-4800-bed8-f7c798bf81d7
+
+	measure 'Crypto Market Overview' = ```
+			
+			VAR TotalCap = SUM(Coin[market_cap]) / 1000000000000  // Trillions
+			VAR TotalVolume = SUM(Coin[volume_24h]) / 1000000000  // Billions
+			VAR BTCDominance = [BTC Dominance %]  // Your existing measure
+			VAR StablecoinRatio = [Stablecoin Ratio %]  // Your existing measure
+			VAR AltcoinIndex = [Altcoin Season Index]  // Your existing measure
+			VAR RiskyAssets = 
+			    COUNTROWS(FILTER(Coin, Coin[percent_change_24h] < -10))
+			VAR TopGainer = 
+			    MAXX(TOPN(1, Coin, Coin[percent_change_24h]), Coin[name] & " (+" & FORMAT(Coin[percent_change_24h], "0.0") & "%)")
+			VAR TopLoser = 
+			    MINX(TOPN(1, Coin, Coin[percent_change_24h], ASC), Coin[name] & " (" & FORMAT(Coin[percent_change_24h], "0.0") & "%)")
+			
+			RETURN
+			"📊 Global Crypto Market Update:
+			• Market Cap: $" & FORMAT(TotalCap, "0.00") & "T (" & IF(TotalCap > 3.5, "📈 Bull", "🐻 Neutral") & ")
+			• 24h Volume: $" & FORMAT(TotalVolume, "0.00") & "B (" & IF(TotalVolume/TotalCap > 0.1, "💧 Liquid", "⚠️ Dry") & ")
+			• BTC Dominance: " & FORMAT(BTCDominance, "0.0%") & 
+			    SWITCH(TRUE(),
+			        BTCDominance < 0.45, " (Alt Season!)",
+			        BTCDominance > 0.55, " (BTC Dominance)",
+			        " (Balanced)"
+			    ) & "
+			• Stablecoins: " & FORMAT(StablecoinRatio, "0.0%") & " of cap" & 
+			    IF(StablecoinRatio < 0.1, " ⚠️ Low", "") & "
+			• Altcoin Index: " & FORMAT(AltcoinIndex, "0.0%") & 
+			    IF(AltcoinIndex > 1.5, " 🚀 Hot!", "")
+			```
+		lineageTag: 50cf7c4b-9e61-4e1b-aadd-4603d1ba199f
+
+	measure 'ETH Dominance Daily' = ```
+			
+			VAR TotalCap = 
+			    CALCULATE(
+			        SUM(Coin[market_cap]),
+			        ALLSELECTED(Coin)
+			    )
+			RETURN
+			    DIVIDE(
+			        CALCULATE(
+			            SUM(Coin[market_cap]),
+			            Coin[LogoData.symbol] = "ETH"
+			        ),
+			        TotalCap
+			    )
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 0a428af2-79f8-4fa6-bc6f-2d5fb538edbc
+
+	measure 'Stablecoin Dominance Daily' = ```
+			
+			VAR TotalCap = 
+			    CALCULATE(
+			        SUM(Coin[market_cap]),
+			        ALLSELECTED(Coin)
+			    )
+			RETURN
+			    DIVIDE(
+			        CALCULATE(
+			            SUM(Coin[market_cap]),
+			            Coin[LogoData.symbol] IN {"USDT", "USDC"}
+			        ),
+			        TotalCap
+			    )
+			```
+		lineageTag: cefaafaf-637e-4754-b238-82744b644560
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Top 10 Alt Dominance Daily' = ```
+			
+			VAR TotalCap = 
+			    CALCULATE(
+			        SUM(Coin[market_cap]),
+			        ALLSELECTED(Coin)
+			    )
+			VAR Top10Alts = 
+			    TOPN(
+			        10,
+			        FILTER(
+			            Coin,
+			            NOT Coin[LogoData.symbol] IN {"BTC", "ETH", "USDT", "USDC"}
+			        ),
+			        Coin[market_cap], DESC
+			    )
+			RETURN
+			    DIVIDE(
+			        SUMX(Top10Alts, [market_cap]),
+			        TotalCap
+			    )
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 82d5504e-fc35-4063-ba96-a32fc3a008e1
+
+	measure 'Market Phase' =
+			
+			VAR BTC_Dom = [BTC Dominance %]
+			VAR Alts_Dom = [Top 10 Alt Dominance Daily]
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        BTC_Dom > 60, "🚨 Bitcoin Dominance (Risk-Off)",
+			        Alts_Dom > 15, "🚀 Altcoin Season (Risk-On)",
+			        "🟰 Balanced Market"
+			    )
+		lineageTag: 117d9dcf-3a7c-4ad1-a059-1172a85d6e13
+
+	measure 'Market Trends Summary' = ```
+			
+			VAR TotalCap = SUM(Coin[market_cap]) / 1000000000000  // Trillions
+			VAR TotalVolume = SUM(Coin[volume_24h]) / 1000000000  // Billions
+			VAR BTCDom = [BTC Dominance %]
+			VAR ETHDom = [ETH Dominance Daily]
+			
+			// Top Performers by Timeframe
+			VAR TopGainer90d = MAXX(TOPN(1, Coin, Coin[percent_change_90d], DESC), 
+			    Coin[name] & " (" & FORMAT(Coin[percent_change_90d]/100, "+0.0%") & ")")
+			VAR TopGainer60d = MAXX(TOPN(1, Coin, Coin[percent_change_60d], DESC), 
+			    Coin[name] & " (" & FORMAT(Coin[percent_change_60d]/100, "+0.0%") & ")")
+			VAR TopGainer30d = MAXX(TOPN(1, Coin, Coin[percent_change_30d], DESC), 
+			    Coin[name] & " (" & FORMAT(Coin[percent_change_30d]/100, "+0.0%") & ")")
+			VAR TopGainer7d = MAXX(TOPN(1, Coin, Coin[percent_change_7d], DESC), 
+			    Coin[name] & " (" & FORMAT(Coin[percent_change_7d]/100, "+0.0%") & ")")
+			
+			// Market Momentum Indicators
+			VAR Avg90d = AVERAGE(Coin[percent_change_90d])
+			VAR Avg30d = AVERAGE(Coin[percent_change_30d])
+			VAR Avg7d = AVERAGE(Coin[percent_change_7d])
+			
+			VAR MarketMood = 
+			    IF([Altcoin Season Index] > 1.5, "🚀 Strong Alt Season", 
+			       IF(BTCDom > 0.6, "🛡️ Bitcoin Dominance", 
+			       "⚖ Balanced Market"))
+			
+			RETURN
+			"📊 CRYPTO MARKET TRENDS • " 
+			& UPPER(FORMAT(TODAY(), "mmm dd, yyyy")) & "
+			• Market Cap: $" & FORMAT(TotalCap, "0.00") & "T • 24h Vol: $" & FORMAT(TotalVolume, "0.00") & "B
+			• Dominance: BTC " & FORMAT(BTCDom, "0.0%") & " • ETH " & FORMAT(ETHDom, "0.0%") & "
+			• Top Performers:
+			  90d: " & TopGainer90d & " ↑
+			  60d: " & TopGainer60d & " ↑
+			  30d: " & TopGainer30d & " ↑
+			  7d: " & TopGainer7d & " ↑
+			• Market Momentum:
+			  90d: " & FORMAT(Avg90d/100, "+0.0%") & " • 30d: " & FORMAT(Avg30d/100, "+0.0%") & " • 7d: " & FORMAT(Avg7d/100, "+0.0%") & "
+			• Market Mood: " & MarketMood & 
+			IF(CONTAINSSTRING(MarketMood, "Alt Season"), " • Index: " & FORMAT([Altcoin Season Index], "0.00"), "")
+			```
+		lineageTag: 9c0010fb-fd88-4fcf-9411-7c11363c99ee
+
+	measure 'BTC Correlation Index' = ```
+			
+			// Get BTC's 24h change
+			VAR BTC_24h = 
+			    CALCULATE(
+			        AVERAGE(Coin[percent_change_24h]),
+			        Coin[LogoData.symbol] = "BTC"
+			    )
+			
+			// Calculate mean of all altcoins' 24h changes (excluding BTC)
+			VAR Alts_Avg = 
+			    AVERAGEX(
+			        FILTER(Coin, Coin[LogoData.symbol] <> "BTC"),
+			        Coin[percent_change_24h]
+			    )
+			
+			// Calculate covariance
+			VAR _Covariance = 
+			    AVERAGEX(
+			        FILTER(Coin, Coin[LogoData.symbol] <> "BTC"),
+			        (Coin[percent_change_24h] - Alts_Avg) * (BTC_24h - Alts_Avg)
+			    )
+			
+			// Calculate standard deviations
+			VAR Alts_StdDev = 
+			    STDEVX.P(
+			        FILTER(Coin, Coin[LogoData.symbol] <> "BTC"),
+			        Coin[percent_change_24h]
+			    )
+			VAR BTC_StdDev = 
+			    STDEVX.P(
+			        FILTER(Coin, Coin[LogoData.symbol] = "BTC"),
+			        Coin[percent_change_24h]
+			    )
+			
+			// Compute Pearson correlation
+			RETURN
+			    DIVIDE(
+			        _Covariance,
+			        (Alts_StdDev * BTC_StdDev),
+			        0
+			    )
+			```
+		formatString: #,0.0000000000
+		lineageTag: 6454070f-b0f9-4718-aa7c-73f94b554a1d
+
+	measure 'BTC vs Alts 24h' = ```
+			
+			VAR BTC_Change = 
+			    CALCULATE(
+			        AVERAGE(Coin[percent_change_24h]),
+			        Coin[LogoData.symbol] = "BTC"
+			    )
+			VAR Alts_AvgChange = 
+			    AVERAGEX(
+			        FILTER(Coin, Coin[LogoData.symbol] <> "BTC"),
+			        Coin[percent_change_24h]
+			    )
+			RETURN
+			    IF(
+			        BTC_Change * Alts_AvgChange > 0, 
+			        "🟢 Moving Together (" & FORMAT(BTC_Change, "+0.0%") & " vs " & FORMAT(Alts_AvgChange, "+0.0%") & ")",
+			        "🔴 Diverging (" & FORMAT(BTC_Change, "+0.0%") & " vs " & FORMAT(Alts_AvgChange, "+0.0%") & ")"
+			    )
+			```
+		lineageTag: 04e78b27-01f6-4504-a970-d99626708e78
+
+	measure 'BTC 24h % Change' =
+			
+			CALCULATE(
+			    SELECTEDVALUE(Coin[percent_change_24h]),
+			    Coin[LogoData.symbol] = "BTC"
+			)
+		lineageTag: 5d1d5b34-97c8-48f0-ac4d-a38b437697fb
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Followed BTC' =
+			
+			VAR BTC_Direction = SIGN([BTC 24h % Change])
+			RETURN
+			    IF(
+			        SIGN(SELECTEDVALUE(Coin[percent_change_24h])) = BTC_Direction,
+			        "✅ Yes",
+			        "❌ No"
+			    )
+		lineageTag: faa74849-2377-48c5-b4b5-1ef93b4a6fa0
+
+	measure 'Direction Match' = ```
+			
+			VAR BTC_Direction = SIGN(
+			    CALCULATE(
+			        SELECTEDVALUE(Coin[percent_change_24h]),
+			        Coin[LogoData.symbol] = "BTC"
+			    )
+			)
+			VAR MatchingAlts = 
+			    COUNTROWS(
+			        FILTER(Coin,
+			            Coin[LogoData.symbol] <> "BTC" &&
+			            SIGN(Coin[percent_change_24h]) = BTC_Direction
+			        )
+			    )
+			VAR TotalAlts = COUNTROWS(FILTER(Coin, Coin[LogoData.symbol] <> "BTC"))
+			RETURN
+			    DIVIDE(MatchingAlts, TotalAlts, 0)
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: cced174f-297c-4ea5-b0c4-64fcd8b57763
+
+	column id
+		dataType: string
+		lineageTag: 9fe07472-3bf1-4c1b-87b7-d4f6b523361f
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: 9925e0af-441c-43a6-93c0-d5543786c724
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column symbol
+		dataType: string
+		lineageTag: 92f718df-6748-4ed9-a2c0-e1a080d548ff
+		summarizeBy: none
+		sourceColumn: symbol
+
+		annotation SummarizationSetBy = Automatic
+
+	column price
+		dataType: double
+		formatString: \$#,0.0000;(\$#,0.0000);\$#,0.0000
+		lineageTag: 3fb4bb82-00da-4684-a2ba-9b66ba010317
+		summarizeBy: none
+		sourceColumn: price
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = User
+
+	column 'LogoData.symbol'
+		dataType: string
+		lineageTag: cb007601-bc0d-439f-bd7e-f134ed972eeb
+		summarizeBy: none
+		sourceColumn: LogoData.symbol
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'LogoData.Value.id'
+		dataType: string
+		lineageTag: 49a3c27f-99ad-41f8-a6fb-6cba08a89537
+		summarizeBy: none
+		sourceColumn: LogoData.Value.id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'LogoData.Value.name'
+		dataType: string
+		lineageTag: bd2b7f9f-fd51-4d4b-9f95-e9ecb14ec8c8
+		summarizeBy: none
+		sourceColumn: LogoData.Value.name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'LogoData.Value.symbol'
+		dataType: string
+		lineageTag: 06637be1-cc61-4f2d-8903-e09838d38e91
+		summarizeBy: none
+		sourceColumn: LogoData.Value.symbol
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'LogoData.Value.category'
+		dataType: string
+		lineageTag: 084892b2-66b0-4150-980e-0b555bc39950
+		summarizeBy: none
+		sourceColumn: LogoData.Value.category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'LogoData.Value.logo'
+		dataType: string
+		lineageTag: 588b8be3-0e97-473b-a734-d7e530df53b2
+		dataCategory: ImageUrl
+		summarizeBy: none
+		sourceColumn: LogoData.Value.logo
+
+		annotation SummarizationSetBy = Automatic
+
+	column volume_24h
+		dataType: int64
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: feb42940-1cea-4d9e-9997-0b415c085245
+		summarizeBy: sum
+		sourceColumn: volume_24h
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column volume_change_24h
+		dataType: string
+		lineageTag: 728027d1-606c-42b7-a807-49a3d0f7cbe9
+		summarizeBy: none
+		sourceColumn: volume_change_24h
+
+		annotation SummarizationSetBy = Automatic
+
+	column percent_change_1h
+		dataType: double
+		lineageTag: 67e6e444-f853-4557-9b18-720ecbc04864
+		summarizeBy: sum
+		sourceColumn: percent_change_1h
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column percent_change_24h
+		dataType: double
+		lineageTag: de5b0012-a513-4cdf-90d2-42d1505bde66
+		summarizeBy: sum
+		sourceColumn: percent_change_24h
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column percent_change_7d
+		dataType: double
+		lineageTag: 63130d4f-7a28-4611-8f75-e203cc4e1f30
+		summarizeBy: sum
+		sourceColumn: percent_change_7d
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column percent_change_30d
+		dataType: double
+		lineageTag: f9e1dad5-0789-4204-bc41-1f3f76232e54
+		summarizeBy: sum
+		sourceColumn: percent_change_30d
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column percent_change_60d
+		dataType: double
+		lineageTag: 8e28b1e2-ac6d-4aec-aeba-0facc52706f6
+		summarizeBy: sum
+		sourceColumn: percent_change_60d
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column percent_change_90d
+		dataType: double
+		lineageTag: efecb64f-f097-446f-8032-cc2f385ee615
+		summarizeBy: sum
+		sourceColumn: percent_change_90d
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column market_cap
+		dataType: int64
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 8a2f7709-0741-4154-85c4-10c5c74b38e1
+		summarizeBy: sum
+		sourceColumn: market_cap
+
+		annotation SummarizationSetBy = Automatic
+
+	column market_cap_dominance
+		dataType: double
+		lineageTag: a863666c-e323-4978-9de8-73f0b621cc16
+		summarizeBy: sum
+		sourceColumn: market_cap_dominance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column last_updated
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: df45016a-8507-4480-bb43-9ddf0c233bd9
+		summarizeBy: none
+		sourceColumn: last_updated
+
+		variation Variation
+			isDefault
+			relationship: 20bcffe6-525a-487b-81c8-c226a1100e25
+			defaultHierarchy: LocalDateTable_21695da2-08b9-4837-9876-e03c50a822f8.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Coin = m
+		mode: import
+		source =
+				let
+				    apiKey = "db334088-9aca-4481-83b2-19b4d5bc62ac",
+				
+				    // Get listings
+				    urlListings = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=100&convert=USD",
+				    sourceListings = Json.Document(Web.Contents(urlListings,
+				        [
+				            Headers = [
+				                #"X-CMC_PRO_API_KEY" = apiKey,
+				                #"Accept" = "application/json"
+				            ]
+				        ]
+				    )),
+				    dataListings = sourceListings[data],
+				    dataTable = Table.FromList(dataListings, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+				    expanded = Table.ExpandRecordColumn(dataTable, "Column1", {"id", "name", "symbol", "quote"}, {"id", "name", "symbol", "quote"}),
+				    quoteExpanded = Table.ExpandRecordColumn(expanded, "quote", {"USD"}, {"USD"}),
+				    usdExpanded = Table.ExpandRecordColumn(quoteExpanded, "USD", {"price", "volume_24h", "volume_change_24h", "percent_change_1h", "percent_change_24h", "percent_change_7d", "percent_change_30d", "percent_change_60d", "percent_change_90d", "market_cap", "market_cap_dominance", "last_updated"}, {"price", "volume_24h", "volume_change_24h", "percent_change_1h", "percent_change_24h", "percent_change_7d", "percent_change_30d", "percent_change_60d", "percent_change_90d", "market_cap", "market_cap_dominance", "last_updated"}),
+				    listings = Table.SelectColumns(usdExpanded,{"id", "name", "symbol", "price", "volume_24h", "volume_change_24h", "percent_change_1h", "percent_change_24h", "percent_change_7d", "percent_change_30d", "percent_change_60d", "percent_change_90d", "market_cap", "market_cap_dominance", "last_updated"}),
+				
+				    // Build comma-separated symbols string for logos
+				    symbols = listings[symbol],
+				    symbolString = Text.Combine(symbols, ","),
+				
+				    // Get logos
+				    urlLogos = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/info?symbol=" & symbolString,
+				    sourceLogos = Json.Document(Web.Contents(urlLogos,
+				        [
+				            Headers = [
+				                #"X-CMC_PRO_API_KEY" = apiKey,
+				                #"Accept" = "application/json"
+				            ]
+				        ]
+				    )),
+				    dataLogos = sourceLogos[data],
+				    logosTable = Record.ToTable(dataLogos),
+				    #"Expanded Value" = Table.ExpandRecordColumn(logosTable, "Value", {"id", "name", "symbol", "category", "logo"}, {"Value.id", "Value.name", "Value.symbol", "Value.category", "Value.logo"}),
+				    renamedLogos = Table.RenameColumns(#"Expanded Value", {{"Name", "symbol"}}),
+				
+				    // Merge listings with logos by symbol
+				    merged = Table.NestedJoin(listings, "symbol", renamedLogos, "symbol", "LogoData", JoinKind.LeftOuter),
+				    #"Expanded LogoData" = Table.ExpandTableColumn(merged, "LogoData", {"symbol", "Value.id", "Value.name", "Value.symbol", "Value.category", "Value.logo"}, {"LogoData.symbol", "LogoData.Value.id", "LogoData.Value.name", "LogoData.Value.symbol", "LogoData.Value.category", "LogoData.Value.logo"}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Expanded LogoData",{{"percent_change_1h", Percentage.Type}, {"percent_change_24h", Percentage.Type}, {"percent_change_7d", Percentage.Type}, {"percent_change_30d", Percentage.Type}, {"percent_change_60d", Percentage.Type}, {"percent_change_90d", Percentage.Type}, {"market_cap", Int64.Type}, {"market_cap_dominance", type number}, {"last_updated", type datetime}, {"price", Currency.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
