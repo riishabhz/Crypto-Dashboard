@@ -2,13 +2,12 @@
 
 <img width="704" height="425" alt="image" src="https://github.com/user-attachments/assets/ca8528c8-2f0c-4fea-8d18-c568bdfad6e7" />
 
+
 <img width="703" height="427" alt="image" src="https://github.com/user-attachments/assets/a2570088-08c6-4453-8fec-ca4d084cd3eb" />
+
 
 <img width="525" height="429" alt="image" src="https://github.com/user-attachments/assets/795d6709-26b8-47af-a519-9cdde9b8a8fd" />
 
-Sure! Here's a concise LinkedIn-style post you can use to share your work:
-
----
 
 🚀 **Built a Real-Time Crypto Dashboard using CoinMarketCap API + Power BI** 📊
 
