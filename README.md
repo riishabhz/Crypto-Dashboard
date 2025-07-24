@@ -9,6 +9,9 @@
 <img width="525" height="429" alt="image" src="https://github.com/user-attachments/assets/795d6709-26b8-47af-a519-9cdde9b8a8fd" />
 
 
+![Screen-Recording](https://github.com/user-attachments/assets/69342ee4-7043-4a6c-b7e8-fd11dbfb652a)
+
+
 🚀 **Built a Real-Time Crypto Dashboard using CoinMarketCap API + Power BI** 📊
 
 Recently, I created a dynamic cryptocurrency dashboard that pulls live data from CoinMarketCap using their public API.
